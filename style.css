@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 1px;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.billeder {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .billeder {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .billeder {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
